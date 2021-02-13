@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "es2019",
+    "jsx": "preserve",
+    "strictFunctionTypes": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "declaration": true
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
+}

@@ -102,3 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+*.map
+
+# Compiled file, i dont sure we need it in repo
+index.js
