@@ -51,7 +51,7 @@ function pluginVueEnv(variables: Variables = {}, args: Partial<Options> = {}) {
 
       if (isJs) {
         return {
-          code: Object.entries(allVars).reduce((acc, [name, value]) => acc.replace(name, value), code),
+          code: Object.entries(allVars).reduce((acc, [name, value]) => acc.replace(new RegExp(name, 'g'), value), code),
         };
       }
     },
