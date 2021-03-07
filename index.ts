@@ -46,7 +46,7 @@ function pluginVueEnv(variables: Variables = {}, args: Partial<Options> = {}) {
 
   return {
     name: PLUGIN_NAME,
-    transform(code: string, id: any) {
+    transform(code: string, id: string) {
       const isJs = id.match(options.fileRegexp);
 
       if (isJs) {
