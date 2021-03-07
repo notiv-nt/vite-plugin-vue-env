@@ -9,9 +9,9 @@ interface Options {
 }
 declare function pluginVueEnv(variables?: Variables, args?: Partial<Options>): {
     name: string;
-    transform(code: string, id: any): {
+    transform(code: string, id: string): {
         code: string;
-    } | undefined;
+    };
 };
 export { pluginVueEnv };
 export default pluginVueEnv;
