@@ -4,7 +4,6 @@
   "description": "Provide VUE_APP_ env variables to VITE app",
   "main": "index.js",
   "scripts": {
-    "prepublish": "npm run build",
     "build": "tsc -d index.ts",
     "test": "jest"
   },
